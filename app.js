@@ -71,3 +71,35 @@ divideButton.addEventListener('click', () => {
 
     divideAnswer.textContent = sum;
 });
+
+import { modulo } from './calculator.js';
+
+const moduloNumber1 = document.getElementById('modulo-number-1');
+const moduloNumber2 = document.getElementById('modulo-number-2');
+const moduloButton = document.getElementById('modulo-button');
+const moduloAnswer = document.getElementById('modulo-answer'); 
+
+moduloButton.addEventListener('click', () => {
+    const num1 = Number(moduloNumber1.value);
+    const num2 = Number(moduloNumber2.value);
+
+    const sum = modulo(num1, num2);
+
+    moduloAnswer.textContent = sum;
+});
+
+import { integerDivide } from './calculator.js';
+
+const intDivNumber1 = document.getElementById('int-div-number-1');
+const intDivNumber2 = document.getElementById('int-div-number-2');
+const intDivButton = document.getElementById('int-div-button');
+const intDivAnswer = document.getElementById('int-div-answer'); 
+
+intDivButton.addEventListener('click', () => {
+    const num1 = Number(intDivNumber1.value);
+    const num2 = Number(intDivNumber2.value);
+
+    const sum = integerDivide(num1, num2);
+
+    intDivAnswer.textContent = sum;
+});
