@@ -21,7 +21,3 @@ export function modulo(x, y) {
 export function integerDivide(x, y) {
     return (x / y).toFixed(0);
 }
-
-export function pytha(x, y, z) {
-    return 
-}
