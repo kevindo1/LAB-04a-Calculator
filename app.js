@@ -21,7 +21,7 @@ addButton.addEventListener('click', () => {
 });
 
 //import 
-import {subtract} from './calculator.js';
+import { subtract } from './calculator.js';
 
 //DOM elements
 const subtractNumber1 = document.getElementById('subtract-number-1');
